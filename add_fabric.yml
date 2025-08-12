@@ -1,0 +1,15 @@
+---
+- name: Create fabrics using group_vars
+  hosts: ndfc
+  gather_facts: no
+
+  tasks:
+    - name: Create initial set of fabrics
+      cisco.dcnm.dcnm_fabric:
+        state: merged
+        config: "{{ fabric_list }}"
+      register: result_create
+
+    - name: Show create result
+      debug:
+        var: result_create

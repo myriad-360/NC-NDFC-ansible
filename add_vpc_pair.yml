@@ -1,0 +1,13 @@
+---
+- name: Add vPC pairs to fabrics
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Add vPCs to each fabric
+      cisco.dcnm.dcnm_vpc_pair:
+        fabric: "{{ item.key }}"
+        state: merged
+        config: "{{ item.value }}"
+      loop: "{{ vpc_pairs | dict2items }}"
+

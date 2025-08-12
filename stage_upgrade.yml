@@ -1,0 +1,16 @@
+---
+- name: Stage switch images (pre-upgrade)
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Stage images for upgrade
+      cisco.dcnm.dcnm_image_upgrade:
+        state: merged
+        config: "{{ image_upgrade_config }}"
+        stage: true
+        activate: false
+        reload: false
+        run_post_upgrade: false
+        delete_inactive: false
+

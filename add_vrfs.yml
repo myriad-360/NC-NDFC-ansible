@@ -1,0 +1,21 @@
+---
+- name: Create and deploy VRFs
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Add VRFs to fabric
+      cisco.dcnm.dcnm_vrf:
+        state: merged
+        fabric: "{{ item.fabric }}"
+        config:
+          - vrf_name: "{{ item.vrf_name }}"
+            vrf_id: "{{ item.vrf_id }}"
+            vrf_template: "{{ item.vrf_template }}"
+            vrf_description: "{{ item.vrf_description }}"
+            vlan_id: "{{ item.vlan_id }}"
+            attach: "{{ item.attach }}"
+      loop: "{{ vrf_list }}"
+      loop_control:
+        label: "{{ item.vrf_name }}"
+

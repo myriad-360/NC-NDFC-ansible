@@ -1,0 +1,20 @@
+---
+- name: Gather high-level facts from Cisco and Palo Alto devices
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Create fabrics
+      cisco.dcnm.dcnm_fabric:
+        state: merged
+        config:
+        -   FABRIC_NAME: test-fabric1
+            FABRIC_TYPE: VXLAN_EVPN
+            BGP_AS: 65000
+        -   FABRIC_NAME: test-Fabric11
+            FABRIC_TYPE: VXLAN_EVPN_MSD
+        -   FABRIC_NAME: test-fabric12
+            FABRIC_TYPE: LAN_CLASSIC
+      register: result
+    - debug:
+        var: result

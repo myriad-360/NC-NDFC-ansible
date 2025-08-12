@@ -1,0 +1,11 @@
+---
+- name: Query upgrade status
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Check upgrade status
+      cisco.dcnm.dcnm_image_upgrade:
+        state: query
+        config: "{{ image_upgrade_config }}"
+

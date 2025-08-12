@@ -1,0 +1,26 @@
+---
+- name: Add switches to fabric using bootstrap onboarding
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Add switches to fabric
+      cisco.dcnm.dcnm_inventory:
+        state: merged
+        fabric: "{{ item.fabric }}"
+        config:
+          - seed_ip: "{{ item.seed_ip }}"
+            user_name: "{{ item.user_name }}"
+            password: "{{ item.password }}"
+            role: "{{ item.role }}"
+            preserve_config: false
+            source: "{{ item.source }}"
+      loop: "{{ switch_list }}"
+      loop_control:
+        label: "{{ item.seed_ip }}"
+      register: add_switch_result
+
+    - name: Show switch onboarding result
+      debug:
+        var: add_switch_result
+

@@ -1,0 +1,23 @@
+---
+- name: Create and deploy networks
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Add networks to fabric
+      cisco.dcnm.dcnm_network:
+        fabric: "{{ item.fabric }}"
+        state: merged
+        config:
+          - net_name: "{{ item.net_name }}"
+            vrf_name: "{{ item.vrf_name | default(omit) }}"
+            net_id: "{{ item.net_id }}"
+            vlan_id: "{{ item.vlan_id }}"
+            gw_ip: "{{ item.gw_ip | default(omit) }}"
+            int_desc: "{{ item.int_desc }}"
+            is_l2only: "{{ item.is_l2only | default (omit) }}"
+            attach: "{{ item.attach }}"
+      loop: "{{ network_list }}"
+      loop_control:
+        label: "{{ item.net_name }}"
+

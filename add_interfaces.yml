@@ -1,0 +1,19 @@
+---
+- name: Add Interfaces to NDFC Fabrics
+  hosts: ndfc_controller
+  gather_facts: no
+
+  vars_files:
+    - group_vars/ndfc/interfaces.yml
+
+  tasks:
+    - name: Configure Interfaces using dcnm_interface
+      cisco.dcnm.dcnm_interface:
+        state: merged
+        config: "{{ interfaces }}"
+      register: interface_result
+
+    - name: Display result summary
+      debug:
+        var: interface_result
+
