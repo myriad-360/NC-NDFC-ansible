@@ -1,0 +1,14 @@
+vrf_list:
+  - vrf_name: Test-A-VRF
+    fabric: Staging_Princeton
+    vrf_id: 5001
+    vrf_template: Default_VRF_Universal
+    vrf_description: "Tenant A Routing Domain"
+    vlan_id: 2001
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
