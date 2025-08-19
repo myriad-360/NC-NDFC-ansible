@@ -1,0 +1,12 @@
+---
+collections:
+  - cisco.ios
+  - cisco.nxos
+  - ansible.netcommon
+  - ansible.utils
+  - cisco.asa
+  - ansible.posix
+  - amazon.aws
+  - community.network
+  - cisco.nd
+  - cisco.dcnm
