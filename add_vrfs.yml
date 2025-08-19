@@ -6,9 +6,9 @@
   tasks:
     - name: Add VRFs to fabric
       cisco.dcnm.dcnm_vrf:
-       state: merged
-       fabric: "{{ item.fabric }}"
-       config:
+        state: merged
+        fabric: "{{ item.fabric }}"
+        config:
           - vrf_name: "{{ item.vrf_name }}"
             vrf_id: "{{ item.vrf_id }}"
             vrf_template: "{{ item.vrf_template }}"
@@ -18,4 +18,3 @@
       loop: "{{ vrf_list }}"
       loop_control:
         label: "{{ item.vrf_name }}"
-
