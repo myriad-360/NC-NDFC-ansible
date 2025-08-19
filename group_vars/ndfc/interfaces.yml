@@ -1,0 +1,20 @@
+switch_list:
+  - fabricName: test-fabric1
+    ipAddress: 10.1.1.11
+    authProtocol: SHA
+    userName: admin
+    password: YourSwitchPass
+    snmpVersion: v3
+    maxHops: 0
+    role: leaf
+    source: manual
+  - fabricName: test-fabric1
+    ipAddress: 10.1.1.12
+    authProtocol: SHA
+    userName: admin
+    password: YourSwitchPass
+    snmpVersion: v3
+    maxHops: 0
+    role: spine
+    source: manual
+

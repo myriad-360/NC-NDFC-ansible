@@ -1,0 +1,14 @@
+switch_list:
+  - fabric: Somerset
+    seed_ip: 172.26.29.23
+    user_name: 'admin'
+    password: 'Xray3samzz'
+    role: spine
+    poap:
+      - serial_number: FDO28100XV2
+        model: 'N9K-C9364C-GX'
+        version: '10.5(3)'
+        hostname: 'POAP_SWITCH'
+        image_policy: "NX10_5_3_F"
+        config_data:
+          modulesModel: []

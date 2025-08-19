@@ -1,0 +1,53 @@
+network_list:
+  - fabric: Staging_Princeton
+    vrf_name: Test-A-VRF
+    net_name: TenantA-Network1
+    net_id: 2301
+    vlan_id: 2301
+    gw_ip: 10.10.10.1/24
+    int_desc: "Network for Tenant A App Tier"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+
+  - fabric: Staging_Princeton
+    vrf_name: Test-B-VRF
+    net_name: TenantB-Network1
+    net_id: 2302
+    vlan_id: 2302
+    gw_ip: 10.20.10.1/24
+    int_desc: "Network for Tenant B Web Tier"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+
+  - fabric: Staging_Princeton
+    net_name: TenantC-Network1
+    net_id: 2304
+    vlan_id: 2304
+    is_l2only: true
+    int_desc: "Network for Tenant B L2 only"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+
+  - fabric: test_fabric1
+    vrf_name: Test-C-VRF
+    net_name: TenantC-Network1
+    net_id: 2303
+    vlan_id: 2303
+    gw_ip: 10.30.30.1/24
+    int_desc: "Network for Tenant C Core Segment"
+    attach: []

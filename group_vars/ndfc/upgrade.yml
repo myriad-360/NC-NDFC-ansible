@@ -1,0 +1,23 @@
+upgrade_fabric: Staging_Princeton
+
+upgrade_images:
+  - image_name: nxos64-cs.10.4.5.M.bin
+    image_version: "10.4(5)M"
+    source: "bootflash:"
+
+upgrade_switches:
+  - switch_ip: 10.1.1.101
+    role: leaf
+    platform: N9K-C93180YC-FX
+    serial_number: FOC1234ABCD
+  - switch_ip: 10.1.1.102
+    role: spine
+    platform: N9K-C9336C-FX2
+    serial_number: FOC5678EFGH
+
+upgrade_policy:
+  operation: non-disruptive
+  upgrade_type: hitless
+  reload: false
+  wait_for_completion: true
+

@@ -1,0 +1,21 @@
+vpc_pairs:
+  test-fabric1:
+    - ip: 10.1.1.101
+      peerlink_po_id: 10
+      peerlink_members: "Ethernet1/1-2"
+      peerlink_allowed_vlans: "100-200"
+    - ip: 10.1.1.102
+      peerlink_po_id: 10
+      peerlink_members: "Ethernet1/1-2"
+      peerlink_allowed_vlans: "100-200"
+
+  test-fabric2:
+    - ip: 10.2.1.101
+      peerlink_po_id: 20
+      peerlink_members: "Ethernet1/3-4"
+      peerlink_allowed_vlans: "300-400"
+    - ip: 10.2.1.102
+      peerlink_po_id: 20
+      peerlink_members: "Ethernet1/3-4"
+      peerlink_allowed_vlans: "300-400"
+
