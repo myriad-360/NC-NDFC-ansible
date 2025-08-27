@@ -1,0 +1,14 @@
+all:
+  children:
+    ndfc:
+      hosts:
+        ndfc_controller:
+          ansible_host: 192.168.101.31
+          ansible_connection: httpapi
+          ansible_network_os: cisco.dcnm.dcnm
+          ansible_user: admin
+          ansible_password: YourPasswordHere
+          ansible_httpapi_use_ssl: true
+          ansible_httpapi_login_domain: local
+          ansible_httpapi_validate_certs: false
+

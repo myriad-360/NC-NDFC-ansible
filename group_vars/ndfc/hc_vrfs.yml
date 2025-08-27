@@ -1,0 +1,111 @@
+vrf_list:
+- vrf_name: HCP_Private
+  fabric: HC_Fabric
+  vrf_id: 51700
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1700
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.132
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.133
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.134
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.135
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.136
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.137
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.138
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.139
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.140
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.141
+    ports: []
+    deploy: true
+- vrf_name: HCP_DMZ
+  fabric: HC_Fabric
+  vrf_id: 51701
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1701
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.132
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.133
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.134
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.135
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.136
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.137
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.138
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.139
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.140
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.141
+    ports: []
+    deploy: true

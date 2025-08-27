@@ -1,0 +1,25 @@
+- name: Pre-provision switches into NDFC fabric
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Pre-stage switches (offline)
+      cisco.dcnm.dcnm_inventory:
+        state: merged
+        fabric: "{{ item.fabric }}"
+        config:
+          - seed_ip: "{{ item.seed_ip }}"
+            serial_number: "{{ item.serial_number }}"
+            role: "{{ item.role }}"
+            source: "{{ item.source | default('manual') }}"
+            user_name: "{{ item.user_name }}"
+            password: "{{ item.password }}"
+      loop: "{{ switch_list }}"
+      loop_control:
+        label: "{{ item.serial_number }}"
+      register: result
+
+    - name: Show switch add result
+      debug:
+        var: result
+

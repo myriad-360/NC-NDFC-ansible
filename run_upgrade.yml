@@ -1,0 +1,16 @@
+---
+- name: Upgrade switch images
+  hosts: ndfc_controller
+  gather_facts: no
+
+  tasks:
+    - name: Perform upgrade with reload
+      cisco.dcnm.dcnm_image_upgrade:
+        state: merged
+        config: "{{ image_upgrade_config }}"
+        stage: false
+        activate: true
+        reload: true
+        run_post_upgrade: true
+        delete_inactive: false
+

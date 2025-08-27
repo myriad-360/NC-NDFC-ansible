@@ -1,0 +1,12 @@
+- name: Query VRFs per fabric
+  cisco.dcnm.dcnm_vrf:
+    fabric: "{{ item }}"
+    state: query
+  loop: "{{ fabrics_to_validate }}"
+  register: vrf_query
+
+- name: Save VRF state to file
+  copy:
+    content: "{{ vrf_query.results | to_nice_json }}"
+    dest: "{{ output_dir }}/{{ sanity_stage }}_vrfs.json"
+

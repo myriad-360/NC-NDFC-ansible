@@ -1,0 +1,2323 @@
+vrf_list:
+- vrf_name: HCP_Private
+  fabric: NCGT_Global
+  vrf_id: 51700
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1700
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: HCP_DMZ
+  fabric: NCGT_Global
+  vrf_id: 51701
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1701
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: ALGO
+  fabric: NCGT_Global
+  vrf_id: 51720
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1720
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: AWS-Transit
+  fabric: NCGT_Global
+  vrf_id: 51721
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1721
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-CCS
+  fabric: NCGT_Global
+  vrf_id: 51722
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1722
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-PRI
+  fabric: NCGT_Global
+  vrf_id: 51723
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1723
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-PRO
+  fabric: NCGT_Global
+  vrf_id: 51724
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1724
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-PRO-NON-CDE
+  fabric: NCGT_Global
+  vrf_id: 51725
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1725
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-PUB
+  fabric: NCGT_Global
+  vrf_id: 51726
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1726
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCM-PUB-CDE
+  fabric: NCGT_Global
+  vrf_id: 51727
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1727
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCS-DEV-PRO
+  fabric: NCGT_Global
+  vrf_id: 51728
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1728
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCS-PRO
+  fabric: NCGT_Global
+  vrf_id: 51729
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1729
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJCS-QA
+  fabric: NCGT_Global
+  vrf_id: 51730
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1730
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIF-PRO
+  fabric: NCGT_Global
+  vrf_id: 51731
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1731
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIF-PUB
+  fabric: NCGT_Global
+  vrf_id: 51732
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1732
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIN-DEV-NWS
+  fabric: NCGT_Global
+  vrf_id: 51733
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1733
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIN-MD
+  fabric: NCGT_Global
+  vrf_id: 51734
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1734
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIN-MD-SFTI
+  fabric: NCGT_Global
+  vrf_id: 51735
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1735
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIN-PIB-LEGACY
+  fabric: NCGT_Global
+  vrf_id: 51736
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1736
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-PRI
+  fabric: NCGT_Global
+  vrf_id: 51737
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1737
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-PRO
+  fabric: NCGT_Global
+  vrf_id: 51738
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1738
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-PUB
+  fabric: NCGT_Global
+  vrf_id: 51739
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1739
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-QA-PRI
+  fabric: NCGT_Global
+  vrf_id: 51740
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1740
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-QA-PRO
+  fabric: NCGT_Global
+  vrf_id: 51741
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1741
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJIS-QA-PUB
+  fabric: NCGT_Global
+  vrf_id: 51742
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1742
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJMW
+  fabric: NCGT_Global
+  vrf_id: 51743
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1743
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJPCI-PRI
+  fabric: NCGT_Global
+  vrf_id: 51744
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1744
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJPCI-PRO
+  fabric: NCGT_Global
+  vrf_id: 51745
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1745
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJPCI-PUB
+  fabric: NCGT_Global
+  vrf_id: 51746
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1746
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-PRI
+  fabric: NCGT_Global
+  vrf_id: 51747
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1747
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-PRO
+  fabric: NCGT_Global
+  vrf_id: 51748
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1748
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-PUB
+  fabric: NCGT_Global
+  vrf_id: 51749
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1749
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-QA-PRI
+  fabric: NCGT_Global
+  vrf_id: 51750
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1750
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-QA-PRO
+  fabric: NCGT_Global
+  vrf_id: 51751
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1751
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSH-QA-PUB
+  fabric: NCGT_Global
+  vrf_id: 51752
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1752
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSP-PRI
+  fabric: NCGT_Global
+  vrf_id: 51753
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1753
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSP-PRO
+  fabric: NCGT_Global
+  vrf_id: 51754
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1754
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: DJSP-PUB
+  fabric: NCGT_Global
+  vrf_id: 51755
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1755
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: ESXNAS
+  fabric: NCGT_Global
+  vrf_id: 51756
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1756
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: GCP-Transit
+  fabric: NCGT_Global
+  vrf_id: 51757
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1757
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: ILO
+  fabric: NCGT_Global
+  vrf_id: 51758
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1758
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: INET
+  fabric: NCGT_Global
+  vrf_id: 51759
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1759
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: MCN
+  fabric: NCGT_Global
+  vrf_id: 51760
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1760
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: NAS
+  fabric: NCGT_Global
+  vrf_id: 51761
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1761
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: SC
+  fabric: NCGT_Global
+  vrf_id: 51762
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1762
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: SITEL
+  fabric: NCGT_Global
+  vrf_id: 51763
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1763
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: STS-PRI
+  fabric: NCGT_Global
+  vrf_id: 51764
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1764
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: STS-PRO
+  fabric: NCGT_Global
+  vrf_id: 51765
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1765
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: STS-PUB
+  fabric: NCGT_Global
+  vrf_id: 51766
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1766
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: T1-PRO
+  fabric: NCGT_Global
+  vrf_id: 51767
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1767
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: T1D-PRO
+  fabric: NCGT_Global
+  vrf_id: 51768
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1768
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: TE
+  fabric: NCGT_Global
+  vrf_id: 51769
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1769
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: TX-PRI
+  fabric: NCGT_Global
+  vrf_id: 51770
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1770
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true
+- vrf_name: WSJ
+  fabric: NCGT_Global
+  vrf_id: 51771
+  vrf_template: Default_VRF_Universal
+  vrf_description: ''
+  vlan_id: 1771
+  attach:
+  - ip_address: 172.26.29.6
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.7
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.8
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.9
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.16
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.17
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.18
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.19
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.25
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.26
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.27
+    ports: []
+    deploy: true
+  - ip_address: 172.26.29.28
+    ports: []
+    deploy: true

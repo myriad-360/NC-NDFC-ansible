@@ -1,0 +1,18 @@
+Fabric Sanity Report:
+
+- test_fabric1: CRITICAL
+  - VRFs: 1
+  - Networks: 1
+  - Switches: 1
+- test_fabric2: HEALTHY
+  - VRFs: 0
+  - Networks: 0
+  - Switches: 0
+- Staging_Princeton: MAJOR
+  - VRFs: 3
+  - Networks: 12
+  - Switches: 8
+- Test_Fabric11: HEALTHY
+  - VRFs: 0
+  - Networks: 0
+  - Switches: 0

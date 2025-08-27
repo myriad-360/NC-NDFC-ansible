@@ -1,0 +1,2584 @@
+network_list:
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Server-Mgmt
+    net_id: 10002
+    vlan_id: 2
+    gw_ip: 10.41.2.1/24
+    int_desc: "Network for Server-Mgmt"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Ntwrk-Hardware
+    net_id: 10004
+    vlan_id: 4
+    gw_ip: 10.41.4.1/24
+    int_desc: "Network for Ntwrk-Hardware"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Remote-Access
+    net_id: 10005
+    vlan_id: 5
+    gw_ip: 10.41.5.1/24
+    int_desc: "Network for Remote-Access"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Servers-CP-Prod
+    net_id: 10006
+    vlan_id: 6
+    gw_ip: 10.41.6.1/24
+    int_desc: "Network for Servers-CP-Prod"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Servers-HCP-Prod
+    net_id: 10007
+    vlan_id: 7
+    gw_ip: 10.41.7.1/24
+    int_desc: "Network for Servers-HCP-Prod"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Servers-HCP-Dev
+    net_id: 10008
+    vlan_id: 8
+    gw_ip: 10.41.8.1/24
+    int_desc: "Network for Servers-HCP-Dev"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Servers-CP-Dev
+    net_id: 10009
+    vlan_id: 9
+    gw_ip: 10.41.9.1/24
+    int_desc: "Network for Servers-CP-Dev"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Vmware
+    net_id: 10010
+    vlan_id: 10
+    gw_ip: 10.41.10.1/24
+    int_desc: "Network for Vmware"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Vmotion
+    net_id: 10011
+    vlan_id: 11
+    gw_ip: 10.41.11.1/24
+    int_desc: "Network for Vmotion"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0012
+    net_id: 10012
+    vlan_id: 12
+    gw_ip: 10.41.12.1/24
+    int_desc: "Network for VLAN0012"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0013
+    net_id: 10013
+    vlan_id: 13
+    gw_ip: 10.41.13.1/24
+    int_desc: "Network for VLAN0013"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VM-Client-Outside
+    net_id: 10014
+    vlan_id: 14
+    gw_ip: 10.41.14.1/24
+    int_desc: "Network for VM-Client-Outside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VM-Client-Inside
+    net_id: 10015
+    vlan_id: 15
+    gw_ip: 10.41.15.1/24
+    int_desc: "Network for VM-Client-Inside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: nan
+    net_name: VLAN0016
+    net_id: 10016
+    vlan_id: 16
+    gw_ip: nan/24
+    int_desc: "Network for VLAN0016"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0017
+    net_id: 10017
+    vlan_id: 17
+    gw_ip: 10.41.17.1/24
+    int_desc: "Network for VLAN0017"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: nan
+    net_name: VLAN0018
+    net_id: 10018
+    vlan_id: 18
+    gw_ip: nan/24
+    int_desc: "Network for VLAN0018"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: JDE-Prod
+    net_id: 10019
+    vlan_id: 19
+    gw_ip: 10.41.19.1/24
+    int_desc: "Network for JDE-Prod"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: JDE-QA
+    net_id: 10020
+    vlan_id: 20
+    gw_ip: 10.41.20.1/24
+    int_desc: "Network for JDE-QA"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: JDE-UBE-PROD
+    net_id: 10021
+    vlan_id: 21
+    gw_ip: 10.41.21.1/24
+    int_desc: "Network for JDE-UBE-PROD"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: JDE-WEB-Servers
+    net_id: 10022
+    vlan_id: 22
+    gw_ip: 10.41.22.1/24
+    int_desc: "Network for JDE-WEB-Servers"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: JDE-UBE-Servers
+    net_id: 10023
+    vlan_id: 23
+    gw_ip: 10.41.23.1/24
+    int_desc: "Network for JDE-UBE-Servers"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0024
+    net_id: 10024
+    vlan_id: 24
+    gw_ip: 10.41.24.1/24
+    int_desc: "Network for VLAN0024"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0026
+    net_id: 10026
+    vlan_id: 26
+    gw_ip: 10.41.26.1/24
+    int_desc: "Network for VLAN0026"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0027
+    net_id: 10027
+    vlan_id: 27
+    gw_ip: 10.41.27.1/24
+    int_desc: "Network for VLAN0027"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Workstations
+    net_id: 10028
+    vlan_id: 28
+    gw_ip: 10.41.28.1/24
+    int_desc: "Network for Workstations"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: nan
+    net_name: VLAN0030
+    net_id: 10030
+    vlan_id: 30
+    gw_ip: nan/24
+    int_desc: "Network for VLAN0030"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VoiceHandsets
+    net_id: 10033
+    vlan_id: 33
+    gw_ip: 10.41.33.1/24
+    int_desc: "Network for VoiceHandsets"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VPN-2
+    net_id: 10036
+    vlan_id: 36
+    gw_ip: 10.41.36.1/24
+    int_desc: "Network for VPN-2"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: ZTP-172_18_16_128
+    net_id: 10400
+    vlan_id: 400
+    gw_ip: 172.18.16.129/24
+    int_desc: "Network for ZTP-172_18_16_128"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: WirelessPrivate
+    net_id: 10510
+    vlan_id: 510
+    gw_ip: 10.41.29.1/24
+    int_desc: "Network for WirelessPrivate"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: SCCM
+    net_id: 10700
+    vlan_id: 700
+    gw_ip: 10.41.31.1/24
+    int_desc: "Network for SCCM"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: IPT-Mgmt
+    net_id: 10800
+    vlan_id: 800
+    gw_ip: 10.41.32.1/24
+    int_desc: "Network for IPT-Mgmt"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: IPT-Vmware
+    net_id: 10801
+    vlan_id: 801
+    gw_ip: 10.41.32.17/24
+    int_desc: "Network for IPT-Vmware"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: IPT-VMs
+    net_id: 10802
+    vlan_id: 802
+    gw_ip: 10.41.32.33/24
+    int_desc: "Network for IPT-VMs"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VLAN0803
+    net_id: 10803
+    vlan_id: 803
+    gw_ip: 10.41.32.73/24
+    int_desc: "Network for VLAN0803"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: 901
+    net_id: 10901
+    vlan_id: 901
+    gw_ip: 10.41.25.1/24
+    int_desc: "Network for 901"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: NAT-RNAT
+    net_id: 10902
+    vlan_id: 902
+    gw_ip: 10.41.25.17/24
+    int_desc: "Network for NAT-RNAT"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Prod-VIP
+    net_id: 10903
+    vlan_id: 903
+    gw_ip: 10.41.25.33/24
+    int_desc: "Network for Prod-VIP"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: QA-VIP
+    net_id: 10904
+    vlan_id: 904
+    gw_ip: 10.41.25.49/24
+    int_desc: "Network for QA-VIP"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Prod-VIP-NoneJDE
+    net_id: 10905
+    vlan_id: 905
+    gw_ip: 10.41.25.65/24
+    int_desc: "Network for Prod-VIP-NoneJDE"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: VM-Client-Newstech
+    net_id: 10916
+    vlan_id: 916
+    gw_ip: 10.41.16.1/24
+    int_desc: "Network for VM-Client-Newstech"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Klopotek-Prod
+    net_id: 10991
+    vlan_id: 991
+    gw_ip: 10.41.18.1/24
+    int_desc: "Network for Klopotek-Prod"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: Klopotek-UAT
+    net_id: 10992
+    vlan_id: 992
+    gw_ip: 10.41.18.33/24
+    int_desc: "Network for Klopotek-UAT"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: klopotek-Dev
+    net_id: 10993
+    vlan_id: 993
+    gw_ip: 10.41.18.65/24
+    int_desc: "Network for klopotek-Dev"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_Private
+    net_name: klopotek-RDS
+    net_id: 10994
+    vlan_id: 994
+    gw_ip: 10.41.18.97/24
+    int_desc: "Network for klopotek-RDS"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: nan
+    net_name: VLAN0999
+    net_id: 10999
+    vlan_id: 999
+    int_desc: "Network for VLAN0999"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: DMVPN-DMZ
+    net_id: 10251
+    vlan_id: 251
+    int_desc: "Network for DMVPN-DMZ"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Corp-DMZVmware-ServiceConsole
+    net_id: 10301
+    vlan_id: 301
+    int_desc: "Network for Corp-DMZVmware-ServiceConsole"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Corp-DMZVmware-Vmotion
+    net_id: 10302
+    vlan_id: 302
+    int_desc: "Network for Corp-DMZVmware-Vmotion"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Corp-DMZ-Inside
+    net_id: 10304
+    vlan_id: 304
+    gw_ip: 172.30.4.3/24
+    int_desc: "Network for Corp-DMZ-Inside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Corp-DMZ-Outside
+    net_id: 10305
+    vlan_id: 305
+    int_desc: "Network for Corp-DMZ-Outside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Corp-DMZ-VIP
+    net_id: 10310
+    vlan_id: 310
+    int_desc: "Network for Corp-DMZ-VIP"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: CORP-DMZ-AS400-172_30_11_0_28
+    net_id: 10311
+    vlan_id: 311
+    int_desc: "Network for CORP-DMZ-AS400-172_30_11_0_28"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: Presidio-Management
+    net_id: 10312
+    vlan_id: 312
+    int_desc: "Network for Presidio-Management"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: PCI-DMZ-Inside
+    net_id: 10320
+    vlan_id: 320
+    int_desc: "Network for PCI-DMZ-Inside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: PCI-DMZ-Outside
+    net_id: 10321
+    vlan_id: 321
+    int_desc: "Network for PCI-DMZ-Outside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: PCI2-DMZ-Inside
+    net_id: 10322
+    vlan_id: 322
+    int_desc: "Network for PCI2-DMZ-Inside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: PCI2-DMZ-Outside
+    net_id: 10323
+    vlan_id: 323
+    int_desc: "Network for PCI2-DMZ-Outside"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true
+  - fabric: HC_Fabric
+    vrf_name: HCP_DMZ
+    net_name: DMZ-Qualys
+    net_id: 13009
+    vlan_id: 3009
+    int_desc: "Network for DMZ-Qualys"
+    attach:
+      - ip_address: 172.26.29.6
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.7
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.8
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.9
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.16
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.17
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.18
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.19
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.25
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.26
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.27
+        ports: []
+        deploy: true
+      - ip_address: 172.26.29.28
+        ports: []
+        deploy: true

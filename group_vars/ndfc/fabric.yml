@@ -1,0 +1,150 @@
+fabric_list:
+  - FABRIC_NAME: Staging_Princeton
+    FABRIC_TYPE: VXLAN_EVPN
+    BGP_AS: 65140
+    SUBNET_RANGE: 10.0.29.0/16
+    SUBNET_TARGET_MASK: 31
+    DCI_SUBNET_RANGE: 10.0.12.0/26 
+    DCI_SUBNET_TARGET_MASK: 31
+    BOOTSTRAP_ENABLE: true
+    LOOPBACK0_IP_RANGE: 10.0.6.0/24
+    LOOPBACK1_IP_RANGE: 10.0.10.0/24
+    ANYCAST_GW_MAC: "2020.0000.00aa"
+    ENABLE_TRM: true
+    BFD_ENABLE: True
+    BFD_IBGP_ENABLE: true
+    BFD_OSPF_ENABLE: true
+    BFD_PIM_ENABLE: true
+    DNS_SERVER_VRF: management
+    DNS_SERVER_IP_LIST: "10.0.76.199,10.13.32.199"
+    NTP_SERVER_VRF: management
+    NTP_SERVER_IP_LIST: "10.13.1.13,10.13.32.32,172.26.150.39,172.26.151.7"
+    SYSLOG_SERVER_VRF: management
+    SYSLOG_SERVER_IP_LIST: "192.168.101.64"
+    SYSLOG_SEV: 6
+    AAA_REMOTE_IP_ENABLED: true
+    AAA_SERVER_CONF: |
+                      logging level aaa 5
+                      radius-server host 10.13.102.115 key 7 "2N7852sm" authentication accounting
+                      radius-server host 192.168.192.115 key 7 "2N7852sm" authentication accounting
+                      aaa group server radius DJ-Radius
+                      server 10.13.102.115
+                      server 192.168.192.115
+                      use-vrf management
+                      snmp-server enable traps aaa server-state-change
+                      aaa authentication login default group DJ-Radius
+    BANNER: |
+            #
+            For authorized users only. Anyone connecting in expressly    
+            consents to monitoring of their activities. If such monitoring    
+            reveals possible criminal activity, system personnel may provide    
+            the evidence of such monitoring to law enforcement officials.
+            #
+    ENABLE_NXAPI: false
+    HOST_INTF_ADMIN_STATE: false
+    VPC_DOMAIN_ID_RANGE: 100-199
+    STRICT_CC_MODE: true
+    enableRealTimeBackup: true
+    DEPLOY: true
+
+  - FABRIC_NAME: Somerset
+    FABRIC_TYPE: VXLAN_EVPN
+    BGP_AS: 65141
+    SUBNET_RANGE: 10.0.20.0/22
+    SUBNET_TARGET_MASK: 31
+    DCI_SUBNET_RANGE: 10.0.12.64/26
+    DCI_SUBNET_TARGET_MASK: 31
+    LOOPBACK0_IP_RANGE: 10.0.4.0/24
+    LOOPBACK1_IP_RANGE: 10.0.8.0/24
+    ANYCAST_GW_MAC: "2020.0000.00aa"
+    BOOTSTRAP_ENABLE: true
+    ENABLE_TRM: true
+    BFD_ENABLE: True
+    BFD_IBGP_ENABLE: true
+    BFD_OSPF_ENABLE: true
+    BFD_PIM_ENABLE: true
+    DNS_SERVER_VRF: management
+    DNS_SERVER_IP_LIST: "10.0.76.199,10.13.32.199"
+    NTP_SERVER_VRF: management
+    NTP_SERVER_IP_LIST: "10.13.1.13,10.13.32.32,172.26.150.39,172.26.151.7"
+    SYSLOG_SERVER_VRF: management
+    SYSLOG_SERVER_IP_LIST: "192.168.101.64"
+    SYSLOG_SEV: 6
+    AAA_REMOTE_IP_ENABLED: true
+    AAA_SERVER_CONF: |
+                      logging level aaa 5
+                      radius-server host 10.13.102.115 key 7 "2N7852sm" authentication accounting
+                      radius-server host 192.168.192.115 key 7 "2N7852sm" authentication accounting
+                      aaa group server radius DJ-Radius
+                      server 10.13.102.115
+                      server 192.168.192.115
+                      use-vrf management
+                      snmp-server enable traps aaa server-state-change
+                      aaa authentication login default group DJ-Radius
+    BANNER: |
+            #
+            For authorized users only. Anyone connecting in expressly    
+            consents to monitoring of their activities. If such monitoring    
+            reveals possible criminal activity, system personnel may provide    
+            the evidence of such monitoring to law enforcement officials.
+            #
+    ENABLE_NXAPI: false
+    HOST_INTF_ADMIN_STATE: false
+    VPC_DOMAIN_ID_RANGE: 100-199
+    STRICT_CC_MODE: true
+    enableRealTimeBackup: true
+    DEPLOY: true
+
+  - FABRIC_NAME: HC_Somerset
+    FABRIC_TYPE: VXLAN_EVPN
+    BGP_AS: 65144
+    SUBNET_RANGE: 10.0.28.0/24
+    SUBNET_TARGET_MASK: 31
+    DCI_SUBNET_RANGE: 10.0.12.128/26
+    DCI_SUBNET_TARGET_MASK: 31
+    LOOPBACK0_IP_RANGE: 10.0.5.0/24
+    LOOPBACK1_IP_RANGE: 10.0.9.0/24
+    ANYCAST_GW_MAC: "2020.0000.00aa"
+    BOOTSTRAP_ENABLE: true
+    ENABLE_TRM: true
+    BFD_ENABLE: True
+    BFD_IBGP_ENABLE: true
+    BFD_OSPF_ENABLE: true
+    BFD_PIM_ENABLE: true
+    DNS_SERVER_VRF: management
+    DNS_SERVER_IP_LIST: "10.0.76.199,10.13.32.199"
+    NTP_SERVER_VRF: management
+    NTP_SERVER_IP_LIST: "10.13.1.13,10.13.32.32,172.26.150.39,172.26.151.7"
+    SYSLOG_SERVER_VRF: management
+    SYSLOG_SERVER_IP_LIST: "192.168.101.64"
+    SYSLOG_SEV: 6
+    AAA_REMOTE_IP_ENABLED: true
+    AAA_SERVER_CONF: |
+                      logging level aaa 5
+                      radius-server host 10.13.102.115 key 7 "2N7852sm" authentication accounting
+                      radius-server host 192.168.192.115 key 7 "2N7852sm" authentication accounting
+                      aaa group server radius DJ-Radius
+                      server 10.13.102.115
+                      server 192.168.192.115
+                      use-vrf management
+                      snmp-server enable traps aaa server-state-change
+                      aaa authentication login default group DJ-Radius
+    BANNER: |
+            #
+            For authorized users only. Anyone connecting in expressly    
+            consents to monitoring of their activities. If such monitoring    
+            reveals possible criminal activity, system personnel may provide    
+            the evidence of such monitoring to law enforcement officials.
+            #
+    ENABLE_NXAPI: false
+    HOST_INTF_ADMIN_STATE: false
+    VPC_DOMAIN_ID_RANGE: 100-199
+    STRICT_CC_MODE: true
+    enableRealTimeBackup: true
+    DEPLOY: true
+
+  - FABRIC_NAME: HC_Fabric
+    FABRIC_TYPE: VXLAN_EVPN_MSD
+
+  - FABRIC_NAME: DJ_Fabric
+    FABRIC_TYPE: VXLAN_EVPN_MSD

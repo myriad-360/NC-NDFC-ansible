@@ -1,0 +1,12 @@
+- name: Query switches for each fabric
+  cisco.dcnm.dcnm_inventory:
+    fabric: "{{ item }}"
+    state: query
+  loop: "{{ fabrics_to_validate }}"
+  register: switch_query
+
+- name: Save switch state to file
+  copy:
+    content: "{{ switch_query.results | to_nice_json }}"
+    dest: "{{ output_dir }}/{{ sanity_stage }}_switches.json"
+

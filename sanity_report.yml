@@ -1,0 +1,112 @@
+---
+- name: Fabric Sanity Report with VRF, Network, and Switch Counts
+  hosts: ndfc_controller
+  gather_facts: no
+
+  vars:
+    report_path: "reports/sanity_report_{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}.txt"
+
+  tasks:
+
+    - name: Extract fabric names from fabric_list
+      set_fact:
+        fabrics_to_validate: "{{ fabric_list | map(attribute='FABRIC_NAME') | list }}"
+
+    - name: Build query config for fabrics
+      set_fact:
+        fabric_query_config: "{{ fabrics_to_validate | map('regex_replace', '^(.*)$', '{\"FABRIC_NAME\": \"\\1\"}') | map('from_yaml') | list }}"
+
+    - name: Query fabric health statuses
+      cisco.dcnm.dcnm_fabric:
+        state: query
+        config: "{{ fabric_query_config }}"
+      register: fabric_query
+
+    - name: Extract fabric status map from response
+      set_fact:
+        fabric_status_summary: >-
+          {{
+            dict(
+              fabric_query.response[0].DATA | map(attribute='fabricName') |
+              zip(fabric_query.response[0].DATA | map(attribute='operStatus'))
+            )
+          }}
+
+    - name: Query all VRFs per fabric
+      cisco.dcnm.dcnm_vrf:
+        state: query
+        fabric: "{{ item }}"
+      loop: "{{ fabrics_to_validate }}"
+      register: vrf_query
+      ignore_errors: true
+
+    - name: Query all networks per fabric
+      cisco.dcnm.dcnm_network:
+        state: query
+        fabric: "{{ item }}"
+      loop: "{{ fabrics_to_validate }}"
+      register: network_query
+      ignore_errors: true
+
+    - name: Query all inventory per fabric
+      cisco.dcnm.dcnm_inventory:
+        state: query
+        fabric: "{{ item }}"
+      loop: "{{ fabrics_to_validate }}"
+      register: inventory_query
+      ignore_errors: true
+
+    - name: Collect VRF counts per fabric
+      set_fact:
+        vrf_counts: >-
+          {{
+            dict(
+              fabrics_to_validate | zip(
+                vrf_query.results | map('extract_count', 'response') | list
+              )
+            )
+          }}
+
+    - name: Collect Network counts per fabric
+      set_fact:
+        network_counts: >-
+          {{
+            dict(
+              fabrics_to_validate | zip(
+                network_query.results | map('extract_count', 'response') | list
+              )
+            )
+          }}
+
+    - name: Collect Inventory (Switch) counts per fabric
+      set_fact:
+        inventory_counts: >-
+          {{
+            dict(
+              fabrics_to_validate | zip(
+                inventory_query.results | map('extract_count', 'response') | list
+              )
+            )
+          }}
+
+    - name: Build formatted report content
+      set_fact:
+        sanity_report_output: |
+          Fabric Sanity Report:
+
+          {% for fabric_name in fabrics_to_validate %}
+          - {{ fabric_name }}: {{ fabric_status_summary.get(fabric_name, 'UNKNOWN') }}
+            - VRFs: {{ vrf_counts.get(fabric_name, 0) }}
+            - Networks: {{ network_counts.get(fabric_name, 0) }}
+            - Switches: {{ inventory_counts.get(fabric_name, 0) }}
+          {% endfor %}
+
+    - name: Write full report to file
+      copy:
+        content: "{{ sanity_report_output }}"
+        dest: "{{ report_path }}"
+
+    - name: Display summary
+      debug:
+        msg: "{{ sanity_report_output }}"
+

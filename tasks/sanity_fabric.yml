@@ -1,0 +1,28 @@
+---
+- name: Query fabrics from controller
+  cisco.dcnm.dcnm_fabric:
+    state: query
+    config: "{{ fabric_query_config }}"
+  register: fabric_query
+
+- name: Show raw query result
+  debug:
+    var: fabric_query.response[0].DATA
+
+- name: Extract fabric status summary
+  set_fact:
+    fabric_status_summary: >-
+      {{
+        fabric_query.response[0].DATA | map(attribute='fabricName') |
+        zip(fabric_query.response[0].DATA | map(attribute='operStatus')) |
+        list
+      }}
+
+- name: Display summary of fabric statuses
+  debug:
+    msg: >-
+      {{
+        'Fabric Validation Summary:\n' +
+        fabric_status_summary | map('join', ' - Status: ') | join('\n')
+      }}
+

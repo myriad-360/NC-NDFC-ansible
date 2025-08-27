@@ -1,0 +1,133 @@
+network_list:
+    - fabric: NCGT_Global
+      vrf_name: TE
+      net_name: TE-10_220_0_8_29-AWS-DJ
+      net_id: 13301
+      vlan_id: 3301
+      gw_ip: 10.220.0.13/29
+      int_desc: "Network for TE-10_220_0_8_29-AWS-DJ"
+      attach:
+        - ip_address: 172.26.29.6
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.7
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.8
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.9
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.16
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.17
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.18
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.19
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.25
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.26
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.27
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.28
+          ports: []
+          deploy: true
+    - fabric: NCGT_Global
+      vrf_name: TE
+      net_name: TE-10_220_0_16_29-DJIN
+      net_id: 13302
+      vlan_id: 3302
+      gw_ip: 10.220.0.21/29
+      int_desc: "Network for TE-10_220_0_16_29-DJIN"
+      attach:
+        - ip_address: 172.26.29.6
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.7
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.8
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.9
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.16
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.17
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.18
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.19
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.25
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.26
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.27
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.28
+          ports: []
+          deploy: true
+    - fabric: NCGT_Global
+      vrf_name: TE
+      net_name: TE-10_220_1_16_29-DJCS-DEV
+      net_id: 13399
+      vlan_id: 3399
+      gw_ip: 10.220.1.21/29
+      int_desc: "Network for TE-10_220_1_16_29-DJCS-DEV"
+      attach:
+        - ip_address: 172.26.29.6
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.7
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.8
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.9
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.16
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.17
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.18
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.19
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.25
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.26
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.27
+          ports: []
+          deploy: true
+        - ip_address: 172.26.29.28
+          ports: []
+          deploy: true

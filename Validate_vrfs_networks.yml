@@ -1,0 +1,83 @@
+---
+- name: Diff Validation Between Desired and Actual State
+  hosts: ndfc_controller
+  gather_facts: false
+  vars_files:
+    - group_vars/ndfc/vrfs.yml
+    - group_vars/ndfc/vlans.yml
+
+  tasks:
+    - name: Extract fabric names from VRFs
+      set_fact:
+        fabrics_to_diff: "{{ vrf_list | map(attribute='fabric') | unique | list }}"
+
+    # === VRFs ===
+    - name: Query current VRFs per fabric
+      cisco.dcnm.dcnm_vrf:
+        state: query
+        fabric: "{{ item }}"
+      loop: "{{ fabrics_to_diff }}"
+      register: current_vrfs
+
+    - name: Flatten queried VRFs
+      set_fact:
+        live_vrfs: "{{ current_vrfs.results | map(attribute='response') | sum(start=[]) | map(attribute='vrfName') | list }}"
+
+    - name: Flatten desired VRFs
+      set_fact:
+        desired_vrfs: "{{ vrf_list | map(attribute='vrf_name') | list }}"
+
+    - name: Compare VRFs
+      set_fact:
+        vrfs_missing: "{{ desired_vrfs | difference(live_vrfs) }}"
+        vrfs_extra: "{{ live_vrfs | difference(desired_vrfs) }}"
+
+    # === Networks (VLANs) ===
+    - name: Query current Networks per fabric
+      cisco.dcnm.dcnm_network:
+        state: query
+        fabric: "{{ item }}"
+      loop: "{{ fabrics_to_diff }}"
+      register: current_networks
+
+    - name: Flatten queried Networks
+      set_fact:
+        live_networks: "{{ current_networks.results | map(attribute='response') | sum(start=[]) | map(attribute='networkName') | list }}"
+
+    - name: Flatten desired VLANs
+      set_fact:
+        desired_networks: "{{ vlan_list | map(attribute='net_name') | list }}"
+
+    - name: Compare Networks
+      set_fact:
+        networks_missing: "{{ desired_networks | difference(live_networks) }}"
+        networks_extra: "{{ live_networks | difference(desired_networks) }}"
+
+    # === Report ===
+    - name: Show VRF Diff
+      debug:
+        msg: |
+          ▶️ VRFs Comparison:
+          - Missing in Controller: {{ vrfs_missing }}
+          - Extra in Controller:   {{ vrfs_extra }}
+
+    - name: Show Network Diff
+      debug:
+        msg: |
+          ▶️ Network Comparison:
+          - Missing in Controller: {{ networks_missing }}
+          - Extra in Controller:   {{ networks_extra }}
+
+    - name: Write diff report to file
+      copy:
+        content: |
+          Diff Report ({{ ansible_date_time.date }})
+
+          ▶️ VRFs Comparison:
+          - Missing: {{ vrfs_missing | join(', ') }}
+          - Extra:   {{ vrfs_extra | join(', ') }}
+
+          ▶️ Networks Comparison:
+          - Missing: {{ networks_missing | join(', ') }}
+          - Extra:   {{ networks_extra | join(', ') }}
+        dest: "reports/diff_report_{{ ansible_date_time.date }}_{{ ansible_date_time.hour }}{{ ansible_date_time.minute }}.txt"
