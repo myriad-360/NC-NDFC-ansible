@@ -1,6 +1,7 @@
 # NC–NDFC Ansible Playbooks
 
-Automate Cisco **Nexus Dashboard Fabric Controller (NDFC)** provisioning and day‑2 operations: build a fabric, onboard switches, create VRFs and networks, define vPC peers & interfaces, run validations, and orchestrate upgrades.
+These ansible playbooks are meant specifically for NewsCorps NDFC data centers.  
+thisd allows a way to automate Cisco **Nexus Dashboard Fabric Controller (NDFC)** provisioning and day‑2 operations: build a fabric, onboard switches, create VRFs and networks, define vPC peers & interfaces, run validations, and orchestrate upgrades.
 
 > **Tested template:** Easy_Fabric (FABRIC_TYPE: `Switch_Fabric`).
 >
@@ -346,3 +347,4 @@ ansible-playbook -i ndfc_hosts.yml verify_upgrade.yml
 ### License
 
 Internal use. Update if you plan to open source.
+
