@@ -1,20 +1,398 @@
-switch_list:
-  - fabricName: test-fabric1
-    ipAddress: 10.1.1.11
-    authProtocol: SHA
-    userName: admin
-    password: YourSwitchPass
-    snmpVersion: v3
-    maxHops: 0
-    role: leaf
-    source: manual
-  - fabricName: test-fabric1
-    ipAddress: 10.1.1.12
-    authProtocol: SHA
-    userName: admin
-    password: YourSwitchPass
-    snmpVersion: v3
-    maxHops: 0
-    role: spine
-    source: manual
-
+dcnm_fabric: HC-Fabric
+dcnm_interfaces:
+- name: 1/13
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsomesx423 idrac
+- name: 1/13
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx423 data Port 1
+- name: 1/13
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx423 data Port 2
+- name: 1/14
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsomesx424 idrac
+- name: 1/14
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx424 data Port 1
+- name: 1/14
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx424 data Port 2
+- name: 1/15
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsomesx431 idrac
+- name: 1/15
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx431 data Port 1
+- name: 1/15
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx431 data Port 2
+- name: 1/16
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsomesx432 idrac
+- name: 1/16
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx432 data Port 1
+- name: 1/16
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx432 data Port 2
+- name: 1/23
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsomesx463(s) idrac
+- name: 1/23
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx463(s) data Port 1
+- name: 1/23
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsomesx463(s) data Port 2
+- name: 1/25
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx465 idrac
+- name: 1/25
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx465 data Port 1
+- name: 1/25
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx465 data Port 2
+- name: 1/26
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx501 idrac
+- name: 1/26
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx501 data Port 1
+- name: 1/26
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx501 data Port 2
+- name: 1/27
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx502 idrac
+- name: 1/27
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx502 data Port 1
+- name: 1/27
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx502 data Port 2
+- name: 1/28
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx503 idrac
+- name: 1/28
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx503 data Port 1
+- name: 1/28
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx503 data Port 2
+- name: 1/29
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx504 idrac
+- name: 1/29
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx504 data Port 1
+- name: 1/29
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx504 data Port 2
+- name: 1/30
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx505 idrac
+- name: 1/30
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx505 data Port 1
+- name: 1/30
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx505 data Port 2
+- name: 1/31
+  type: access
+  switch:
+  - HCPSOMCALF107
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: '2'
+    description: hcpsbkesx506 idrac
+- name: 1/31
+  type: trunk
+  switch:
+  - HCPSOMCALF103
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx506 data Port 1
+- name: 1/31
+  type: trunk
+  switch:
+  - HCPSOMCALF104
+  deploy: true
+  profile:
+    admin_state: true
+    mode: trunk
+    mtu: default
+    allowed_vlans: trunk_Prod
+    description: hcpsbkesx506 data Port 2
