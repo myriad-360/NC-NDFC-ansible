@@ -1,5 +1,5 @@
 fabric_list:
-  - FABRIC_NAME: Staging_Princeton
+  - FABRIC_NAME: HC_Princeton
     FABRIC_TYPE: VXLAN_EVPN
     BGP_AS: 65140
     SUBNET_RANGE: 10.0.29.0/16
